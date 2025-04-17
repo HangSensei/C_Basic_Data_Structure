@@ -241,7 +241,7 @@ void _MergeSort(int* arr, int left, int right, int* tmp)
 	{
 		return;
 	}
-	int mid = left + (right - left) / 2;
+	int mid = left + (right - left) / 2;// mid = (left + right) / 2
 	//根据mid划分左右序列[left, mid] [mid + 1, right]
 	_MergeSort(arr, left, mid, tmp);
 	_MergeSort(arr, mid+1, right, tmp);
